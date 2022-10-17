@@ -1,0 +1,68 @@
+.body {
+    display: grid;
+    padding: 20px;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    text-align: center;
+    gap: 5px;
+}
+
+.item-1 {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: green;
+}
+
+.item-2 {
+    padding: 20px;
+    grid-column-start: 1;
+    background-color: green;
+}
+
+.item-3 {
+    padding: 20px;
+    background-color: green;
+}
+
+.item-4 {
+    padding: 20px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start:3 ;
+    background-color: green;
+    
+}
+
+@media screen and (max-width : 786px) {
+    .body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    color: white;
+    text-align: center;
+}
+
+.item-1 {
+    padding: 20px;
+    background-color: green;
+}
+
+.item-2 {
+    padding: 20px;
+    background-color: green;
+}
+
+.item-3 {
+    padding: 20px;
+    background-color: green;
+}
+
+.item-4 {
+    padding: 20px;
+    background-color: green;
+    
+}
+}
